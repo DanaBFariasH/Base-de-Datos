@@ -1,0 +1,21 @@
+Create database gatos;
+USE gatos;
+
+ CREATE TABLE razas(
+id INT auto_increment primary  key,
+nombre_de_la_raza VARCHAR(10) NOT NULL,
+comida VARCHAR(10) NOT NULL,
+peso VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE colores(
+id INT auto_increment primary  key,
+color VARCHAR(255) NOT NULL,
+pelaje VARCHAR(255) NOT NULL,
+ojos VARCHAR(255) NOT NULL
+foreign key (color) references razas (color) 
+);
+
+
+
+
